@@ -11,10 +11,10 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
-    <!-- Iconos de Bootstrap -->
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <!-- Fuentes de Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -54,7 +54,9 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Etiquetas de barra de navegación -->
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold">
+            <ul
+              class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold nav-underline"
+            >
               <li class="nav-item">
                 <a
                   class="nav-link text-white text-decoration-none fw-normal"
@@ -85,7 +87,8 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link text-white text-decoration-none fw-normal"
+                  class="nav-link text-white text-decoration-none fw-normal active"
+                  aria-current="page"
                   href="../pages/contacto.html"
                   >Contacto</a
                 >
@@ -97,148 +100,183 @@
     </header>
     <!-- Comienzo del main -->
     <main class="pt-5 mt-3">
-      <section class="position-relative" id="imagen-fondo">
-        <div class="container text-white text-center p-5 sombra">
-          <h1 class="fw-semibold">¿Cómo podemos ayudarte?</h1>
-          <p class="fs-1">¡Déjanos un mensaje!</p>
+      <section class="container">
+        <div class="text-center pb-5">
+          <h1 class="pt-4 mt-3">¿Deseas obtener ofertas especiales?</h1>
+          <h2 class="pt-1">¡Déjanos un mensaje y te contactaremos!</h2>
         </div>
         <!-- Formulario -->
-        <form
-          class="container bg-color text-white p-4 position-absolute top-50 start-50 translate-middle"
-          style="width: 600px"
-        >
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label"
-              >Dirección de correo electrónico:</label
-            >
-            <input
-              type="email"
-              class="form-control"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
-            />
-            <div id="emailHelp" class="form-text">
-              Nunca compartiremos tus datos personales con nadie.
+        <section class="row bg-form rounded-4">
+          <form class="pt-4 pb-4 col-md-6 justify-content-center mx-auto">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+              <div id="emailHelp" class="form-text">
+                We'll never share your email with anyone else.
+              </div>
             </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Password</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+              />
+            </div>
+            <div class="mb-3 form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+              <label class="form-check-label" for="exampleCheck1"
+                >Check me out</label
+              >
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          <div class="col-md-4 justify-content-center mx-auto text-center">
+            <img src="../img/img-contacto/girl.svg" alt="" />
           </div>
-          <div class="mb-3 input-group">
-            <textarea
-              class="form-control"
-              aria-label="With textarea"
-              style="height: 130px"
-            ></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
+        </section>
+        <!-- Mapa -->
+        <div class="pt-5 text-center mapa">
+          <h3 class="pb-4">Realizamos envios a nivel nacional</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63120.720703868734!2d-71.21449579475744!3d8.591667861934353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e648721ba42e8dd%3A0x5df63fea56d56c66!2sM%C3%A9rida%2C%20Venezuela!5e0!3m2!1ses!2sco!4v1683336525692!5m2!1ses!2sco"
+            width="80%"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </section>
     </main>
     <!-- Pie de página -->
     <footer>
-      <div class="container-fluid bg-secondary-subtle text-dark mt-5 pt-3">
-        <div class="ms-5 me-5 row px-xl-5 pt-2">
-          <div
-            class="d-flex flex-column justify-content-around col-lg-4 col-md-12 mb-3 pr-3 pr-xl-5"
-          >
-            <a href="./index.html">
-              <img
-                src="../img/logo-sin-fondo.png"
-                width="150px"
-                alt="imagen del footer"
-              />
-            </a>
-            <p>
-              Dolore erat dolor sit lorem vero amet. Sed sit lorem magna, ipsum
-              no sit erat lorem et magna ipsum dolore amet erat.
-            </p>
-            <a class="mb-2 text-dark text-decoration-none">
-              <i class="bi bi-geo-alt-fill"></i>Mérida, Venezuela
-            </a>
-            <a class="mb-2 text-dark text-decoration-none">
-              <i class="mr-3 bi bi-envelope-at-fill"></i>bekalenceriaa@gmail.com
-            </a>
-            <a class="mb-0 text-dark text-decoration-none">
-              <i class="bi bi-whatsapp"></i>+58 4247132178
-            </a>
+      <section class="container-fluid bg-secondary-subtle text-dark mt-5 pt-3">
+        <div class="row justify-content-around ms-5 me-5">
+          <div class="col-md-2 d-flex flex-column justify-content-evenly">
+            <!-- Logo -->
+            <section class="d-flex justify-content-center">
+              <a href="./index.html">
+                <img
+                  src="../img/logo-sin-fondo.png"
+                  width="180px"
+                  alt="imagen del footer"
+                />
+              </a>
+            </section>
+            <!-- Iconos de redes sociales -->
+            <section
+              class="social-labels pt-4 pb-5 d-flex justify-content-around icono"
+            >
+              <a href="https://www.instagram.com/">
+                <i class="fa-regular fa-envelope fs-1"></i>
+              </a>
+              <a href="https://www.instagram.com/">
+                <i class="fa-brands fa-instagram fs-1"></i>
+              </a>
+              <a href="https://www.instagram.com/">
+                <i class="fa-brands fa-whatsapp fs-1"></i>
+              </a>
+            </section>
           </div>
-          <div class="col-lg-8 col-md-12">
-            <div class="row">
-              <div class="pt-3 col-md-4 mb-3">
-                <h5 class="text-dark mb-4">Acceso rápido</h5>
-                <div class="d-flex flex-column justify-content-start">
-                  <a class="text-dark mb-2" href="/index.html"
-                    ><i class="bi bi-caret-right-fill"></i>Inicio</a
-                  >
-                  <a class="text-dark mb-2" href="../pages/promociones.html"
-                    ><i class="bi bi-caret-right-fill"></i>Promociones</a
-                  >
-                  <a class="text-dark mb-2" href="../pages/tienda.html"
-                    ><i class="bi bi-caret-right-fill"></i>Tienda</a
-                  >
-                  <a class="text-dark mb-2" href="../pages/nosotros.html"
-                    ><i class="bi bi-caret-right-fill"></i>Nosotros</a
-                  >
-                  <a class="text-dark mb-2" href="../pages/contacto.html"
-                    ><i class="bi bi-caret-right-fill"></i>Contacto</a
-                  >
-                </div>
-              </div>
-              <div class="pt-3 col-md-4 mb-3">
-                <h5 class="font-weight-bold text-dark mb-4">Avisos legales</h5>
-                <div class="d-flex flex-column justify-content-start">
-                  <a class="text-dark mb-2" href="#"
-                    ><i class="bi bi-caret-right-fill"></i>Política de
-                    privacidad</a
-                  >
-                  <a class="text-dark mb-2" href="#"
-                    ><i class="bi bi-caret-right-fill"></i>Condiciones de uso</a
-                  >
-                  <a class="text-dark mb-2" href="#"
-                    ><i class="bi bi-caret-right-fill"></i>Preguntas
-                    frecuentes</a
-                  >
-                  <a class="text-dark mb-2" href="#"
-                    ><i class="bi bi-caret-right-fill"> </i>Centro de ayuda</a
-                  >
-                </div>
-              </div>
-              <div class="col-md-4 mb-3 pt-3">
-                <h5 class="font-weight-bold text-dark mb-4 text-center">
-                  ¿Deseas recibir nuestro newsletter?
-                </h5>
-                <form action="#">
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      class="form-control border-5 py-2 mb-2"
-                      placeholder="Nombre"
-                      required="required"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <input
-                      type="email"
-                      class="form-control border-5 py-2 mb-4"
-                      placeholder="E-mail"
-                      required="required"
-                    />
-                  </div>
-                  <div class="d-flex flex-column align-items-center">
-                    <button class="btn button-color border-5" type="submit">
-                      Suscríbete
-                    </button>
-                  </div>
-                </form>
-              </div>
+          <!-- Acceso rápido -->
+          <div class="pt-3 col-md-2 mb-3">
+            <h5 class="text-dark text-center mb-4">Acceso rápido</h5>
+            <div
+              class="d-flex flex-column justify-content-start labels text-center"
+            >
+              <a class="text-dark mb-2" href="./index.html"
+                ><i class="fa-solid fa-greater-than me-2"></i>Inicio</a
+              >
+              <a class="text-dark mb-2" href="./pages/promociones.html"
+                ><i class="fa-solid fa-greater-than me-2"></i>Promociones</a
+              >
+              <a class="text-dark mb-2" href="./pages/tienda.html"
+                ><i class="fa-solid fa-greater-than me-2"></i>Tienda</a
+              >
+              <a class="text-dark mb-2" href="./pages/nosotros.html"
+                ><i class="fa-solid fa-greater-than me-2"></i>Nosotros</a
+              >
+              <a class="text-dark mb-2" href="./pages/contacto.html"
+                ><i class="fa-solid fa-greater-than me-2"></i>Contacto</a
+              >
             </div>
           </div>
+          <!-- Avisos legales -->
+          <div class="pt-3 col-md-2 mb-3">
+            <h5 class="font-weight-bold text-dark text-center mb-4">
+              Avisos legales
+            </h5>
+            <div
+              class="d-flex flex-column justify-content-start labels text-center"
+            >
+              <a class="text-dark mb-2" href="#"
+                ><i class="fa-solid fa-greater-than me-2"></i>Política de
+                privacidad</a
+              >
+              <a class="text-dark mb-2" href="#"
+                ><i class="fa-solid fa-greater-than me-2"></i>Condiciones de
+                uso</a
+              >
+              <a class="text-dark mb-2" href="#"
+                ><i class="fa-solid fa-greater-than me-2"></i>Preguntas
+                frecuentes</a
+              >
+              <a class="text-dark mb-2" href="#"
+                ><i class="fa-solid fa-greater-than me-2"></i>Centro de ayuda</a
+              >
+            </div>
+          </div>
+          <!-- Newsletter -->
+          <div class="col-md-3 mb-3 pt-3">
+            <h5 class="font-weight-bold text-dark mb-4 text-center">
+              ¿Deseas recibir nuestro newsletter?
+            </h5>
+            <form action="#">
+              <div class="form-group mx-auto" style="width: auto">
+                <input
+                  type="text"
+                  class="form-control border-5 py-2 mb-2 align-items-center"
+                  placeholder="Nombre"
+                  required="required"
+                />
+              </div>
+              <div class="form-group mx-auto" style="width: auto">
+                <input
+                  type="email"
+                  class="form-control border-5 py-2 mb-4"
+                  placeholder="E-mail"
+                  required="required"
+                />
+              </div>
+              <div class="d-flex flex-column align-items-center">
+                <button class="btn button-color border-5" type="submit">
+                  Suscríbete
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
+        <!-- Sección final -->
         <div class="container me-auto">
           <div class="row border-top border-light mx-xl-5 py-4">
             <div class="col-md-6 px-xl-0">
-              <p class="mb-md-0 text-center text-dark">
-                <a class="text-dark" href="../index.html"
-                  >Beka Lencería &copy; 2023.
-                </a>
+              <p class="mb-md-0 text-center text-dark color-effect">
+                <a href="./index.html">Beka Lencería &copy; 2023.</a>
                 Todos los derechos reservados.
               </p>
             </div>
@@ -251,7 +289,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"

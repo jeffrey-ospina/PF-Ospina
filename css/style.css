@@ -22,12 +22,21 @@
   transition: ease-in 0.2s; }
 
 /* Pie de página */
-.red-color a {
+.color-effect a {
   color: black;
   text-decoration: none; }
 
-.red-color a:hover {
+.color-effect a:hover {
   text-decoration: underline;
+  color: #e388f5; }
+
+/* Redes sociales */
+.social-labels a {
+  text-decoration: none;
+  color: black; }
+
+.social-labels :hover {
+  transition: ease-out 0.1s;
   color: #e388f5; }
 
 /* Botón newsletter */
@@ -75,19 +84,11 @@
   transform: scale(1.025); }
 
 /* Página Contacto */
-#imagen-fondo {
-  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.073), rgba(117, 19, 93, 0.484)), url(../img/img-contacto/img-contacto.jpg);
-  height: 120vh;
-  background-position: right;
-  background-repeat: no-repeat; }
-
-.bg-color {
+/* Formulario */
+.bg-form {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.2); }
-
-.sombra {
-  text-shadow: 2px 1px black; }
+  backdrop-filter: blur(9.3px);
+  -webkit-backdrop-filter: blur(9.3px);
+  border: 1px solid rgba(255, 255, 255, 0.3); }
