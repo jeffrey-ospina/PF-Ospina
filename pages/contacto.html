@@ -106,31 +106,79 @@
           <h2 class="pt-1">¡Déjanos un mensaje y te contactaremos!</h2>
         </div>
         <!-- Formulario -->
-        <section class="row bg-form rounded-4">
+        <section class="row bg-form rounded-4 mt-2">
           <form class="pt-4 pb-4 col-md-6 justify-content-center mx-auto">
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label"
-                >Email address</label
+              <!-- Nombre y apellido -->
+              <div class="row">
+                <div class="col">
+                  <label
+                    for="formGroupExampleInput"
+                    class="form-label fw-medium"
+                    >Nombre:</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Maria"
+                    aria-label="First name"
+                  />
+                </div>
+                <div class="col">
+                  <label
+                    for="formGroupExampleInput"
+                    class="form-label fw-medium"
+                    >Apellido:</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Gomez"
+                    aria-label="Last name"
+                  />
+                </div>
+              </div>
+              <!-- Teléfono -->
+              <label
+                for="formGroupExampleInput"
+                class="form-label pt-3 fw-medium"
+                >Número de teléfono:</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="formGroupExampleInput"
+                placeholder="(+58) XXX-XXXXXXX"
+              />
+              <label for="exampleInputEmail1" class="form-label pt-3 fw-medium"
+                >Correo electrónico:</label
               >
               <input
                 type="email"
                 class="form-control"
                 id="exampleInputEmail1"
+                placeholder="mariagomez@gmail.com"
                 aria-describedby="emailHelp"
               />
-              <div id="emailHelp" class="form-text">
-                We'll never share your email with anyone else.
+              <div
+                id="emailHelp"
+                class="form-text pb-3 fst-italic text-body-tertiary"
+              >
+                Nunca compartiremos su correo electrónico con nadie.
               </div>
             </div>
             <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label"
-                >Password</label
+              <label
+                for="exampleFormControlTextarea1"
+                class="form-label fw-medium"
+                >Déjanos tu mensaje:
+                <span class="text-body-tertiary">(opcional)</span></label
               >
-              <input
-                type="password"
+              <textarea
                 class="form-control"
-                id="exampleInputPassword1"
-              />
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
             </div>
             <div class="mb-3 form-check">
               <input
@@ -139,13 +187,19 @@
                 id="exampleCheck1"
               />
               <label class="form-check-label" for="exampleCheck1"
-                >Check me out</label
+                >Acepto recibir información relevante acerca de promociones y/o
+                descuentos</label
               >
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn button-color">Enviar</button>
           </form>
-          <div class="col-md-4 justify-content-center mx-auto text-center">
-            <img src="../img/img-contacto/girl.svg" alt="" />
+          <div
+            class="col-md-4 justify-content-center mx-auto text-center my-auto"
+          >
+            <img
+              src="../img/img-contacto/girl.svg"
+              alt="svg formulario contacto"
+            />
           </div>
         </section>
         <!-- Mapa -->
@@ -170,7 +224,7 @@
           <div class="col-md-2 d-flex flex-column justify-content-evenly">
             <!-- Logo -->
             <section class="d-flex justify-content-center">
-              <a href="./index.html">
+              <a href="../index.html">
                 <img
                   src="../img/logo-sin-fondo.png"
                   width="180px"
@@ -199,19 +253,19 @@
             <div
               class="d-flex flex-column justify-content-start labels text-center"
             >
-              <a class="text-dark mb-2" href="./index.html"
+              <a class="text-dark mb-2" href="../index.html"
                 ><i class="fa-solid fa-greater-than me-2"></i>Inicio</a
               >
-              <a class="text-dark mb-2" href="./pages/promociones.html"
+              <a class="text-dark mb-2" href="./promociones.html"
                 ><i class="fa-solid fa-greater-than me-2"></i>Promociones</a
               >
-              <a class="text-dark mb-2" href="./pages/tienda.html"
+              <a class="text-dark mb-2" href="./tienda.html"
                 ><i class="fa-solid fa-greater-than me-2"></i>Tienda</a
               >
-              <a class="text-dark mb-2" href="./pages/nosotros.html"
+              <a class="text-dark mb-2" href="./nosotros.html"
                 ><i class="fa-solid fa-greater-than me-2"></i>Nosotros</a
               >
-              <a class="text-dark mb-2" href="./pages/contacto.html"
+              <a class="text-dark mb-2" href="#"
                 ><i class="fa-solid fa-greater-than me-2"></i>Contacto</a
               >
             </div>
