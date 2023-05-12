@@ -17,6 +17,13 @@
     text-decoration: underline;
   }
 }
+.navbar-toggler {
+  border: white solid 1px;
+  :focus {
+    box-shadow: none;
+  }
+}
+
 /* Página Inicio */
 /* Botones de productos */
 .over-button:hover {

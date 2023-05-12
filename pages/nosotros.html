@@ -34,7 +34,7 @@
       rel="stylesheet"
     />
     <!-- CSS personalizado -->
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../scss/main.css" />
     <!-- Favicon -->
     <link rel="shortcut icon" href="../img/favicon.svg" type="image/x-icon" />
     <!-- Título de página -->
@@ -45,10 +45,16 @@
     <!-- Header -->
     <header>
       <!-- Barra de navegación -->
-      <nav class="navbar navbar-expand-lg bg-color-nav p-2 fixed-top shadow">
+      <nav
+        class="navbar navbar-dark navbar-expand-lg bg-color-nav p-2 fixed-top shadow"
+      >
         <div class="container">
           <a class="navbar-brand" href="../index.html">
-            <img src="../img/favicon.svg" alt="logo" />
+            <img
+              src="../img/favicon.svg"
+              width="60px"
+              alt="logo principal de la marca"
+            />
           </a>
           <button
             class="navbar-toggler"
@@ -127,7 +133,7 @@
               class="d-block d-sm-none rounded"
               width="100%"
               src="../img/img-nosotros/imagen-nosotros-mobile.png"
-              alt="imagen mobile"
+              alt="imagen de chica acostada sonriendo solo para version móvil"
             />
             <p class="pt-4 d-none d-sm-block">
               Con nosotros puedes encontrar la mejor lencería y productos que te
@@ -144,7 +150,7 @@
             class="col-sm-6 d-none d-sm-block pt-5"
             style="width: 40%"
             src="../img/img-nosotros/imagen-nosotros.png"
-            alt="imagen desktop"
+            alt="imagen de chica acostada sonriendo solo para version desktop"
           />
         </div>
       </section>
@@ -159,7 +165,10 @@
                   href="../pages/nosotros.html#parte-1"
                   class="text-decoration-none text-dark"
                 >
-                  <img src="../img/img-nosotros/aguja.png" alt="aguja" />
+                  <img
+                    src="../img/img-nosotros/aguja.png"
+                    alt="icono de aguja"
+                  />
                   <small class="fs-6 fst-italic fw-medium">Precisión</small>
                 </a>
               </div>
@@ -176,7 +185,7 @@
                   <img
                     src="../img/img-nosotros/bikinis.png"
                     class="text-decoration-none text-dark"
-                    alt="traje de baño"
+                    alt="icono de traje de baño"
                   />
                   <small class="fs-6 fst-italic fw-medium">Confección</small>
                 </a>
@@ -194,7 +203,7 @@
                   <img
                     src="../img/img-nosotros/cinta-de-medida.png"
                     class="text-decoration-none text-dark"
-                    alt="cinta métrica"
+                    alt="icono de cinta métrica"
                   />
                   <small class="fs-6 fst-italic fw-medium">Calidad</small>
                 </a>
@@ -212,7 +221,7 @@
                   <img
                     src="../img/img-nosotros/de-coser.png"
                     class="text-decoration-none text-dark"
-                    alt="máquina de coser"
+                    alt="icono de máquina de coser"
                   />
                   <small class="fs-6 fst-italic fw-medium">Diseño</small>
                 </a>
@@ -225,14 +234,14 @@
       <section>
         <!-- Sección precisión -->
         <a name="parte-1"></a>
-        <h5 class="text-center pb-3 pt-5 text-decoration-underline">
+        <h5 class="text-center pb-3 pt-5 fs-4">
           Precisión en las mejores manos
         </h5>
         <div class="row pt-3 align-items-center justify-content-around">
           <img
             class="col-md-8 col-lg-6"
             src="../img/img-nosotros/secciones/precision-1.jpg"
-            alt="imagen de maquina de coser"
+            alt="persona usando una máquina de coser"
           />
           <p class="col-md-4 col-lg-6 p-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem est
@@ -244,14 +253,12 @@
         </div>
         <!-- Sección confección -->
         <a name="parte-2"></a>
-        <h5 class="text-center pb-3 pt-5 mt-3 text-decoration-underline">
-          Confección con detalle
-        </h5>
+        <h5 class="text-center pb-3 pt-5 mt-3 fs-4">Confección con detalle</h5>
         <div class="row pt-4 align-items-center justify-content-around">
           <img
             class="col-md-8 col-lg-6"
             src="../img/img-nosotros/secciones/confeccion-1.jpg"
-            alt="maniquí"
+            alt="maniquí para diseñar prendas color beige"
           />
           <p class="col-md-4 col-lg-6 p-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem est
@@ -263,14 +270,12 @@
         </div>
         <!-- Sección calidad -->
         <a name="parte-3"></a>
-        <h5 class="text-center pb-3 pt-5 mt-3 text-decoration-underline">
-          Calidad de materiales
-        </h5>
+        <h5 class="text-center pb-3 pt-5 mt-3 fs-4">Calidad de materiales</h5>
         <div class="row pt-4 align-items-center justify-content-around">
           <img
             class="col-md-8 col-lg-6"
             src="../img/img-nosotros/secciones/calidad-1.jpg"
-            alt="prenda"
+            alt="top de color rojo con aumento macro"
           />
           <p class="col-md-4 col-lg-6 p-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem est
@@ -282,21 +287,18 @@
         </div>
         <!-- Sección diseño -->
         <a name="parte-4"></a>
-        <h5 class="text-center pb-3 pt-5 mt-3 text-decoration-underline">
-          Diseño a tu medida
-        </h5>
+        <h5 class="text-center pb-3 pt-5 mt-3 fs-4">Diseños por tallas</h5>
         <div class="row pt-4 align-items-center justify-content-around">
           <img
             class="col-md-8 col-lg-6"
             src="../img/img-nosotros/secciones/diseño-1.jpg"
-            alt="elementos de costura"
+            alt="elementos de costura como tijera, hilos y regla"
           />
           <p class="col-md-4 col-lg-6 p-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem est
-            sapiente fuga cupiditate adipisci dolores explicabo nihil corporis.
-            Animi tempore ut dignissimos laboriosam consequatur culpa ab
-            explicabo sint necessitatibus beatae? Nostrum, ducimus dolorum! At
-            quaerat minus, ipsa iste expedita voluptas!
+            En nuestra tienda en línea, manejamos tallas desde S hasta XL para
+            trajes de baño y lencería. Esperamos que encuentres la talla
+            adecuada para ti. No dudes en contactarnos si necesitas más
+            información o asistencia.
           </p>
         </div>
       </section>
@@ -312,7 +314,7 @@
                 <img
                   src="../img/logo-sin-fondo.png"
                   width="180px"
-                  alt="imagen del footer"
+                  alt="logo de la marca en fondo transparente que reposa en el pie de pagina"
                 />
               </a>
             </section>
@@ -424,7 +426,7 @@
               <img
                 class="img-fluid"
                 src="../img/img-footer/pagos.png"
-                alt="métodos de pago"
+                alt="etiqueta de logos sobre empresas para métodos de pago"
               />
             </div>
           </div>
