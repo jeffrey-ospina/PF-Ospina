@@ -1,0 +1,10 @@
+.social-labels {
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  :hover {
+    transition: ease-out 0.1s;
+    color: #e388f5;
+  }
+}

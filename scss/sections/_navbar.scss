@@ -1,0 +1,17 @@
+.bg-color-nav {
+  background-color: #d2afd9;
+}
+.labels {
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+.navbar-toggler {
+  border: white solid 1px;
+  :focus {
+    box-shadow: none;
+  }
+}

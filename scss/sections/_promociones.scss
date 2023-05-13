@@ -1,0 +1,25 @@
+.forma-bg {
+  clip-path: polygon(100% 15%, 100% 70%, 0% 85%, 0% 30%);
+  background-image: linear-gradient(
+    to right top,
+    #5c3477,
+    #7a3793,
+    #9c36ae,
+    #c22ec6,
+    #eb12db
+  );
+}
+@mixin mobile {
+  @media (max-width: 768px) {
+    font-size: 30px;
+    clip-path: polygon(100% 15%, 100% 70%, 0% 85%, 0% 30%);
+    background-image: linear-gradient(
+      to right top,
+      #5c3477,
+      #7a3793,
+      #9c36ae,
+      #c22ec6,
+      #eb12db
+    );
+  }
+}

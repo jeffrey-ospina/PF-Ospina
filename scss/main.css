@@ -5,7 +5,6 @@
   * p {
     font-family: "Open Sans", sans-serif; }
 
-/* Barra de navegación */
 .bg-color-nav {
   background-color: #d2afd9; }
 
@@ -20,13 +19,10 @@
   .navbar-toggler :focus {
     box-shadow: none; }
 
-/* Página Inicio */
-/* Botones de productos */
 .over-button:hover {
   font-weight: 500 !important;
   transition: ease-in 0.2s; }
 
-/* Pie de página */
 .color-effect a {
   color: black;
   text-decoration: none; }
@@ -35,7 +31,6 @@
   text-decoration: underline;
   color: #e388f5; }
 
-/* Redes sociales */
 .social-labels a {
   text-decoration: none;
   color: black; }
@@ -44,7 +39,6 @@
   transition: ease-out 0.1s;
   color: #e388f5; }
 
-/* Botón newsletter */
 .button-color {
   color: black;
   background-color: #d2afd9b5; }
@@ -55,12 +49,10 @@
   font-weight: 500;
   transition: ease-in 0.2s; }
 
-/* Página Promociones */
 .forma-bg {
   clip-path: polygon(100% 15%, 100% 70%, 0% 85%, 0% 30%);
   background-image: linear-gradient(to right top, #5c3477, #7a3793, #9c36ae, #c22ec6, #eb12db); }
 
-/* Efecto de galería */
 .gallery img {
   width: 0;
   flex-grow: 1;
@@ -74,7 +66,6 @@
   opacity: 1;
   filter: contrast(120%); }
 
-/* Slider */
 .slider {
   aspect-ratio: 10 / 16;
   width: 300px;
@@ -90,8 +81,6 @@
     border-radius: 5px;
     scroll-snap-align: center; }
 
-/* Página Nosotros */
-/* Sección 2 */
 .card-nosotros {
   background: rgba(252, 216, 255, 0.518);
   border-radius: 0.9em;
@@ -103,8 +92,6 @@
   border: #d2afd9 0.2em solid;
   transform: scale(1.025); }
 
-/* Página Contacto */
-/* Formulario */
 .bg-form {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
