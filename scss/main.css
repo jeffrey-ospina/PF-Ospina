@@ -24,7 +24,7 @@
   transition: ease-in 0.2s; }
 
 .color-effect a {
-  color: black;
+  color: #000000;
   text-decoration: none; }
 
 .color-effect a:hover {
@@ -33,14 +33,14 @@
 
 .social-labels a {
   text-decoration: none;
-  color: black; }
+  color: #000000; }
 
 .social-labels :hover {
   transition: ease-out 0.1s;
   color: #e388f5; }
 
 .button-color {
-  color: black;
+  color: #000000;
   background-color: #d2afd9b5; }
 
 .button-color:hover {

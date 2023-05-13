@@ -1,5 +1,7 @@
+$navbarBackground: #d2afd9;
+
 .bg-color-nav {
-  background-color: #d2afd9;
+  background-color: $navbarBackground;
 }
 .labels {
   a {

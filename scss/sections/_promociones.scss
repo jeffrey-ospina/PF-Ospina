@@ -1,12 +1,18 @@
+$formaBgColor1: #5c3477;
+$formaBgColor2: #7a3793;
+$formaBgColor3: #9c36ae;
+$formaBgColor4: #c22ec6;
+$formaBgColor5: #eb12db;
+
 .forma-bg {
   clip-path: polygon(100% 15%, 100% 70%, 0% 85%, 0% 30%);
   background-image: linear-gradient(
     to right top,
-    #5c3477,
-    #7a3793,
-    #9c36ae,
-    #c22ec6,
-    #eb12db
+    $formaBgColor1,
+    $formaBgColor2,
+    $formaBgColor3,
+    $formaBgColor4,
+    $formaBgColor5
   );
 }
 @mixin mobile {
@@ -15,11 +21,11 @@
     clip-path: polygon(100% 15%, 100% 70%, 0% 85%, 0% 30%);
     background-image: linear-gradient(
       to right top,
-      #5c3477,
-      #7a3793,
-      #9c36ae,
-      #c22ec6,
-      #eb12db
+      $formaBgColor1,
+      $formaBgColor2,
+      $formaBgColor3,
+      $formaBgColor4,
+      $formaBgColor5
     );
   }
 }

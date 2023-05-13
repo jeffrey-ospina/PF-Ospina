@@ -1,9 +1,13 @@
+$black: #000000;
+$buttonColor1: #d2afd9b5;
+$buttonColor2: #d2afd9;
+
 .button-color {
-  color: black;
-  background-color: #d2afd9b5;
+  color: $black;
+  background-color: $buttonColor1;
 }
 .button-color:hover {
-  background-color: #d2afd9;
+  background-color: $buttonColor2;
   color: white;
   font-weight: 500;
   transition: ease-in 0.2s;

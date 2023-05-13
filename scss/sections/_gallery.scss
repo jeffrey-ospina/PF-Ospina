@@ -1,3 +1,5 @@
+$imgWidth: 300px;
+
 .gallery {
   img {
     width: 0;
@@ -8,14 +10,14 @@
   }
   img:hover {
     cursor: crosshair;
-    width: 300px;
+    width: $imgWidth;
     opacity: 1;
     filter: contrast(120%);
   }
 }
 .slider {
   aspect-ratio: 10 / 16;
-  width: 300px;
+  width: $imgWidth;
   position: relative;
   display: flex;
   overflow: scroll;
